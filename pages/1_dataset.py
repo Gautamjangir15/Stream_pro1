@@ -12,7 +12,7 @@ import plotly.express as px
 st.title("Dashboard - house Data")
 # img=image.imread(IMAGE_PATH)
 # st.image(img)
-data=pd.read_csv("C:/Users/gauta/house.csv")
+data=pd.read_csv("house.csv")
 st.dataframe(data)
 prices=st.selectbox("Select the price of house:", data['bedrooms'].unique())
 col1,col2=st.columns(2)
